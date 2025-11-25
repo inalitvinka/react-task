@@ -5,20 +5,19 @@ This form contains multiple related fields: radio groups, textareas, comments, f
 Using controlled components here is justified because:
 
 - clear state management
-all field values live in React state → easy to read, analyze, and send to the server;
+  all field values live in React state → easy to read, analyze, and send to the server;
 
 - radio groups are easier to control →
-controlled state ensures the selected option is always correctly reflected in the UI;
+  controlled state ensures the selected option is always correctly reflected in the UI;
 
 - simple form reset →
-a single setFormData(initFormState) resets the entire form;
+  a single setFormData(initFormState) resets the entire form;
 
 - flexible conditional logic →
-you can disable fields, show validation messages, or change behavior dynamically;
+  you can disable fields, show validation messages, or change behavior dynamically;
 
 - reliable validation →
-controlled components make it easy to validate fields on submit and clear errors locally during input.
-
+  controlled components make it easy to validate fields on submit and clear errors locally during input.
 
 ### MenteeForm is an uncontrolled form
 

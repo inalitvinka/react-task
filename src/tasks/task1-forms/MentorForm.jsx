@@ -22,12 +22,12 @@ export const MentorForm = () => {
       [name]: value,
     }));
     setErrors(prevErrors => {
-    const updated = { ...prevErrors };
-    if (name === "dialogue" && value) delete updated.dialogue;
-    if (name === "confidence" && value) delete updated.confidence;
-    if (name === "comments" && value.length >= minCommentsLength) delete updated.comments;
-    return updated;
-  });
+      const updated = { ...prevErrors };
+      if (name === 'dialogue' && value) delete updated.dialogue;
+      if (name === 'confidence' && value) delete updated.confidence;
+      if (name === 'comments' && value.length >= minCommentsLength) delete updated.comments;
+      return updated;
+    });
   };
 
   const submitHandler = event => {
@@ -78,7 +78,7 @@ export const MentorForm = () => {
           ))}
           {errors.confidence && <FieldError message={errors.confidence} />}
         </Fieldset>
-        <Fieldset legend='Technical Comments'>
+        <Fieldset legend='Technical Comments:'>
           <Textarea
             id='comments'
             placeholder='notes / strengths / weak points'
@@ -88,7 +88,7 @@ export const MentorForm = () => {
           />
           {errors.comments && <FieldError message={errors.comments} />}
         </Fieldset>
-        <Fieldset legend='Recommendations'>
+        <Fieldset legend='Recommendations:'>
           <Textarea
             id='links'
             name='links'
