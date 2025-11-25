@@ -15,3 +15,7 @@ export const errorMsg = {
   confidence: '* Please select a confidence rating.',
   comments: `* Comments must be at least ${minCommentsLength} characters long.`,
 };
+
+export const TIME_TO_SHOW = 3000;
+
+export const ANIMATION_DURATION = 300;
