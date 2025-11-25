@@ -15,10 +15,13 @@ export const Navigation = () => {
         }}
       >
         <li>
-          <Link to='/Task1'>Task 1 Forms</Link>
+          <Link to='/Task1'>Task 1: Forms</Link>
         </li>
         <li>
-          <Link to='/Task2'>Task 2 Portals</Link>
+          <Link to='/Task2'>Task 2: Portals</Link>
+        </li>
+        <li>
+          <Link to='/Task3'>Task 3: Virtualization</Link>
         </li>
       </ul>
     </nav>

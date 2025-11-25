@@ -19,3 +19,9 @@ export const errorMsg = {
 export const TIME_TO_SHOW = 3000;
 
 export const ANIMATION_DURATION = 300;
+
+export const feedbacks = Array.from({ length: 500 }, (_, index) => ({
+  id: index + 1,
+  author: `Mentee ${index + 1}`,
+  text: `This is a sample feedback number ${index + 1}.`,
+}));
