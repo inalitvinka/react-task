@@ -1,11 +1,21 @@
+import { Routes, Route } from 'react-router';
 import './App.css';
+import { Task1, Task2, MenteeForm, MentorForm } from '@tasks';
+import { Home } from '@pages/Home';
 
-function App() {
+const App = () => {
   return (
     <>
-      <h1>Vite + React</h1>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='task1' element={<Task1 />}>
+          <Route path='mentor' element={<MentorForm />} />
+          <Route path='mentee' element={<MenteeForm />} />
+        </Route>
+        <Route path='/task2' element={<Task2 />} />
+      </Routes>
     </>
   );
-}
+};
 
 export default App;

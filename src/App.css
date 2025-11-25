@@ -1,6 +1,29 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+a:hover {
+  color: indigo;
+  cursor: pointer;
+}
+
 #root {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
