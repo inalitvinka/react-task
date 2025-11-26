@@ -5,7 +5,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: 'react-task',
+  base: '/react-task',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
