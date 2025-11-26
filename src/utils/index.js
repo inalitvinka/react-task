@@ -1,6 +1,10 @@
 export { fetchData } from './fetchData';
 export { feedbacks } from './feedbacks';
 export {
+  navLinks,
+  formLinks,
+  portalsLinks,
+  linksTask3,
   grade,
   initFormState,
   minCommentsLength,

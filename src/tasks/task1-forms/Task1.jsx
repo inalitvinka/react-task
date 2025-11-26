@@ -1,11 +1,6 @@
 import { Outlet } from 'react-router';
 import { Navigation } from '@components';
-
-const formLinks = [
-  { to: '/', text: 'Home' },
-  { to: 'mentor', text: 'Mentor' },
-  { to: 'mentee', text: 'Mentee' },
-];
+import { formLinks } from '@utils';
 
 export const Task1 = () => {
   return (

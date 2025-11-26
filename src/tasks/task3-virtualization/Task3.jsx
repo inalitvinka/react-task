@@ -1,11 +1,6 @@
 import { Outlet } from 'react-router';
 import { Navigation } from '@components';
-
-const linksTask3 = [
-  { to: '/', text: 'Home' },
-  { to: 'pagination', text: 'Pagination' },
-  { to: 'virtualization', text: 'Virtualization' },
-];
+import { linksTask3 } from '@utils';
 
 export const Task3 = () => {
   return (

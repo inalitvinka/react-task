@@ -1,7 +1,6 @@
 import { TaskDeadline } from './TaskDeadline';
 import { Navigation } from '@components';
-
-const portalsLinks = [{ to: '/', text: 'Home' }];
+import { portalsLinks } from '@utils';
 
 export const Task2 = () => {
   return (
