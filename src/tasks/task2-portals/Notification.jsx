@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Button } from '@components';
-import { TIME_TO_SHOW, ANIMATION_DURATION } from '@utils/constants';
+import { TIME_TO_SHOW, ANIMATION_DURATION } from '@utils';
 
 const NotificationWrapper = styled.div`
   position: fixed;

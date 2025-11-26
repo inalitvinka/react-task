@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { Input, Textarea, Fieldset, Button, FieldError } from '@components';
-import { grade, initFormState, minCommentsLength, errorMsg } from '@utils/constants';
+import { grade, initFormState, minCommentsLength, errorMsg } from '@utils';
+import { Notification } from '../task2-portals/Notification';
 
 export const MentorForm = () => {
   const [formData, setFormData] = useState(initFormState);
   const [errors, setErrors] = useState({});
+  const [notification, setNotification] = useState(false);
 
   const formValidator = () => {
     const errors = {};
@@ -37,10 +40,12 @@ export const MentorForm = () => {
       setErrors(validationResult);
       return;
     }
-    alert('Your data was sent successfully.');
+    setNotification(true);
     setFormData(initFormState);
     setErrors({});
   };
+
+  const onClose = () => setNotification(false);
 
   return (
     <>
@@ -104,8 +109,15 @@ export const MentorForm = () => {
             value={formData.topicsToImprove}
           />
         </Fieldset>
-        <Button type='submit'>Submit</Button>
+        <Button type='submit' disabled={notification}>
+          Submit
+        </Button>
       </form>
+      {notification &&
+        createPortal(
+          <Notification onClose={onClose}>Your data was sent successfully.</Notification>,
+          document.body,
+        )}
     </>
   );
 };
