@@ -2,6 +2,7 @@ export const navLinks = [
   { to: '/task1', text: 'Task 1: Forms' },
   { to: '/task2', text: 'Task 2: Portals' },
   { to: '/task3', text: 'Task 3: Pagination & Virtualization' },
+  { to: '/task4', text: 'Task 4: Error Boundary' },
 ];
 
 export const formLinks = [
@@ -10,7 +11,7 @@ export const formLinks = [
   { to: 'mentee', text: 'Mentee' },
 ];
 
-export const portalsLinks = [{ to: '/', text: 'Home' }];
+export const homeLink = [{ to: '/', text: 'Home' }];
 
 export const linksTask3 = [
   { to: '/', text: 'Home' },

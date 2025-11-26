@@ -3,7 +3,7 @@ export { feedbacks } from './feedbacks';
 export {
   navLinks,
   formLinks,
-  portalsLinks,
+  homeLink,
   linksTask3,
   grade,
   initFormState,
