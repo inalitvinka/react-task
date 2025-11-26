@@ -23,7 +23,7 @@ a:hover {
 }
 
 #root {
-  max-width: 1000px;
+  max-width: 1380px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 10px;
 }

@@ -1,6 +1,6 @@
 import { List } from 'react-window';
 import { RowComponent } from './RowComponent';
-import { feedbacks } from '@utils/constants';
+import { feedbacks } from '@utils';
 
 export const VirtualList = () => {
   return (

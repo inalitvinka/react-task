@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router';
 import './App.css';
-import { Task1, Task2, Task3, MenteeForm, MentorForm } from '@tasks';
+import { Task1, Task2, Task3, MenteeForm, MentorForm, Pagination, VirtualList } from '@tasks';
 import { Home } from '@pages/Home';
 
 const App = () => {
@@ -13,7 +13,10 @@ const App = () => {
           <Route path='mentee' element={<MenteeForm />} />
         </Route>
         <Route path='/task2' element={<Task2 />} />
-        <Route path='/task3' element={<Task3 />} />
+        <Route path='/task3' element={<Task3 />}>
+          <Route path='pagination' element={<Pagination />} />
+          <Route path='virtualization' element={<VirtualList />} />
+        </Route>
       </Routes>
     </>
   );

@@ -4,9 +4,9 @@ export const RowComponent = ({ index, feedbacks, style }) => {
     <div
       style={{
         ...style,
-        padding: '10px',
+        padding: '20px 40px',
         borderBottom: 'solid 1px #e0d8d8ff',
-        background: index % 2 === 0 ? '#fafafa' : 'white',
+        background: index % 2 === 0 ? '#fafafa' : 'inherit',
       }}
     >
       <p>{feedback.author}</p>
