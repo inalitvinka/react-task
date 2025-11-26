@@ -1,28 +1,23 @@
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 
-export const Navigation = () => {
+export const Navigation = ({ links, className }) => {
   return (
     <nav>
-      <ul
-        style={{
-          marginTop: '2rem',
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '1rem',
-          fontSize: '1.5rem',
-          textAlign: 'center',
-        }}
-      >
-        <li>
-          <Link to='/Task1'>Task 1: Forms</Link>
-        </li>
-        <li>
-          <Link to='/Task2'>Task 2: Portals</Link>
-        </li>
-        <li>
-          <Link to='/Task3'>Task 3: Virtualization</Link>
-        </li>
+      <ul className={className || `mb-5 flex justify-center gap-10`}>
+        {links.map(link => (
+          <li key={link.to}>
+            <NavLink
+              to={link.to}
+              className={({ isActive }) =>
+                `transition-colors duration-300 ${
+                  isActive ? 'text-indigo-600 font-bold' : 'text-gray-700'
+                }`
+              }
+            >
+              {link.text}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );
