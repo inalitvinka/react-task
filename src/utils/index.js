@@ -11,4 +11,5 @@ export {
   errorMsg,
   TIME_TO_SHOW,
   ANIMATION_DURATION,
+  ERROR_NUM,
 } from './constants';

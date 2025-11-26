@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Button } from '@components';
+import { ERROR_NUM } from '@utils';
 
 export const BuggyButton = () => {
   const [counter, setCounter] = useState(0);
   const clickHandler = () => setCounter(prev => prev + 1);
-  if (counter === 3) {
+  if (counter === ERROR_NUM) {
     throw new Error('I crashed.');
   }
   return (

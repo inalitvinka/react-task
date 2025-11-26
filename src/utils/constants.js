@@ -40,3 +40,5 @@ export const errorMsg = {
 export const TIME_TO_SHOW = 3000;
 
 export const ANIMATION_DURATION = 300;
+
+export const ERROR_NUM = 3;
